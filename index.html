@@ -2,66 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 💗⋆˚࿔ Fernanda𝜗𝜚˚⋆💗</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>💗⋆˚࿔ Fernanda𝜗𝜚˚⋆💗</title>
 
     <style>
         body {
             background-color: RGB(165, 113, 59);
-         
+            margin: 0;
+            padding: 0;
         }
 
         .Symbol {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* Asegura que el símbolo esté por encima de los recuadros */
-}
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Asegura que el símbolo esté por encima de los recuadros */
+        }
 
+        .Symbol img {
+            height: 100px;
+            transform: rotate(-15deg);
+            margin-top: 200px;
+            margin-left: 100px;
+        }
 
-      .Symbol img{
-        height: 100px;
-        transform: rotate(-15deg);
-        margin-top: 350px;
-        margin-left: 100px;
-      }
         .Tittle {
             text-align: center;
-font-size: 50px;
+            font-size: 36px; /* Tamaño de fuente ajustado */
         }
-        .Frame {
-    width: 500px;
-    height: 400px;
-    background-color: rgb(199, 189, 145);
-    margin: 0 auto; /* Set left and right margins to auto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
 
-        
+        .Frame {
+            max-width: 90%; /* Ajusta la anchura máxima del marco */
+            height: 400px;
+            background-color: rgb(199, 189, 145);
+            margin: 0 auto; /* Centra el marco horizontalmente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
         .Frame img {
-            max-width: 100%; /* Set maximum width to fill the frame */
-            max-height: 97%; /* Set maximum height to fill the frame */
-            object-fit: contain; /* Ensure the entire image is visible */
+            max-width: 100%; /* Establece el ancho máximo para llenar el marco */
+            max-height: 97%; /* Establece la altura máxima para llenar el marco */
+            object-fit: contain; /* Asegura que toda la imagen sea visible */
             margin-top: 20px;
             margin-bottom: 20px;
             position: relative;
         }
-        .Recuadro2 {
-    width: 500px;
-    height: 400px;
-    background-color: rgb(199, 189, 145);
-    margin: 20px auto; /* Adjust the margin to position it below the Frame and center horizontally */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 100px;
-}
 
+        .Recuadro2 {
+            max-width: 90%; /* Ajusta la anchura máxima del segundo recuadro */
+            height: 400px;
+            background-color: rgb(199, 189, 145);
+            margin: 20px auto; /* Ajusta el margen para posicionarlo debajo del Marco y centrarlo horizontalmente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 100px;
+        }
 
         .Recuadro2 img {
             max-width: 90%;
@@ -71,45 +72,48 @@ font-size: 50px;
             object-fit: contain;
             position: relative;
         }
+
         .tape , .tapu {
             position: absolute;
-            width: 40px; /* Adjust the width of the tape */
-            height: 250px; /* Adjust the height of the tape */
-            background-color: #665c22d3; /* Tape color */
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Add a drop shadow */
-            z-index: 1; /* Ensure the tape is above the frame */
+            width: 40px; /* Ajusta el ancho de la cinta */
+            height: 250px; /* Ajusta la altura de la cinta */
+            background-color: #665c22d3; /* Color de la cinta */
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+            z-index: 1; /* Asegura que la cinta esté por encima del marco */
         }
+
         .tape {
-            margin-bottom: 390px; /* Adjust the margin-bottom to position the tape */
-            transform: rotate(87deg); /* Rotate tape to make it diagonal */
+            margin-bottom: 390px; /* Ajusta el margen inferior para posicionar la cinta */
+            transform: rotate(87deg); /* Rota la cinta para hacerla diagonal */
         }
+
         .tapu {
-    position: absolute;
-    width: 40px;
-    height: 200px;
-    bottom: 290px; /* Adjust the distance from the bottom */
-    background-color: #665c22d3;
-    transform: rotate(94deg);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-}
-
-
-
+            position: absolute;
+            width: 40px;
+            height: 200px;
+            bottom: 290px; /* Ajusta la distancia desde abajo */
+            background-color: #665c22d3;
+            transform: rotate(94deg);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body>
-    <h1 class="Tittle">💗𝑀𝒾 𝓋𝒾𝒹𝒶💗</h1>
     <div class="Frame">
-        <div class="tape"></div> <!-- Tape on top of the frame -->
+        <div class="tape"></div> <!-- Cinta encima del marco -->
         <img src="Coraf.jpg" alt="">
         <img src="Cora.jpeg" alt="">
     </div>
     <div class="Recuadro2">
-        <div class="tapu"></div> <!-- Tape on top of the frame -->
+        <div class="tapu"></div> <!-- Cinta encima del marco -->
         <img src="CC.jpg " alt="">
     </div>
-    <div class="Symbol"><img src="https://www.wallquotes.com/sites/default/files/styles/uc_canvas/public/love0042_02.png?itok=zO5tkjIa" alt="">
-        </div>
+    <div class="Symbol">
+        <img src="https://www.wallquotes.com/sites/default/files/styles/uc_canvas/public/love0042_02.png?itok=zO5tkjIa" alt="">
+    </div>
+</body>
+</html>
+
  
 </body>
 </html>
