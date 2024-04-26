@@ -8,98 +8,109 @@
     <style>
         body {
             background-color: RGB(165, 113, 59);
-         
+            margin: 0;
+            padding: 0;
         }
 
         .Symbol {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* Asegura que el símbolo esté por encima de los recuadros */
-}
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Asegura que el símbolo esté por encima de los recuadros */
+        }
 
+        .Symbol img {
+            height: 100px;
+            transform: rotate(-15deg);
+            margin-top: 300px;
+            margin-left: 100px;
+        }
 
-      .Symbol img{
-        height: 100px;
-        transform: rotate(-15deg);
-        margin-top: 300px;
-        margin-left: 100px;
-      }
         .Tittle {
             text-align: center;
             font-size: 50px;
-            
         }
-        .Frame {
-    width: 500px;
-    height: 400px;
-    background-color: rgb(199, 189, 145);
-    margin: 0 auto; /* Set left and right margins to auto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
 
-        
+        .Frame {
+            /* Elimina el ancho y alto fijos */
+            background-color: rgb(199, 189, 145);
+            margin: 0 auto; /* Centra el marco horizontalmente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
         .Frame img {
-            max-width: 100%; /* Set maximum width to fill the frame */
-            max-height: 97%; /* Set maximum height to fill the frame */
-            object-fit: contain; /* Ensure the entire image is visible */
+            max-width: 100%; /* Establece el ancho máximo para llenar el marco */
+            max-height: 100%; /* Establece la altura máxima para llenar el marco */
+            object-fit: contain; /* Asegura que toda la imagen sea visible */
             margin-top: 20px;
             margin-bottom: 20px;
             position: relative;
         }
-        .Recuadro2 {
-    width: 500px;
-    height: 400px;
-    background-color: rgb(199, 189, 145);
-    margin: 20px auto; /* Adjust the margin to position it below the Frame and center horizontally */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 100px;
-}
 
+        .Recuadro2 {
+            /* Elimina el ancho y alto fijos */
+            background-color: rgb(199, 189, 145);
+            margin: 20px auto; /* Ajusta el margen para posicionarlo debajo del Frame y centrarlo horizontalmente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 100px;
+        }
 
         .Recuadro2 img {
-            max-width: 90%;
-            max-height: 90%;
+            max-width: 100%;
+            max-height: 100%;
             margin-top: 20px;
             margin-bottom: 20px;
             object-fit: contain;
             position: relative;
         }
+
         .tape , .tapu {
             position: absolute;
-            width: 40px; /* Adjust the width of the tape */
-            height: 250px; /* Adjust the height of the tape */
-            background-color: #665c22d3; /* Tape color */
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Add a drop shadow */
-            z-index: 1; /* Ensure the tape is above the frame */
+            width: 40px; /* Ajusta el ancho de la cinta */
+            height: 250px; /* Ajusta la altura de la cinta */
+            background-color: #665c22d3; /* Color de la cinta */
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+            z-index: 1; /* Asegura que la cinta esté por encima del marco */
         }
+
         .tape {
-            margin-bottom: 390px; /* Adjust the margin-bottom to position the tape */
-            transform: rotate(87deg); /* Rotate tape to make it diagonal */
+            margin-bottom: 390px; /* Ajusta el margen inferior para posicionar la cinta */
+            transform: rotate(87deg); /* Rota la cinta para hacerla diagonal */
         }
+
         .tapu {
-    position: absolute;
-    width: 40px;
-    height: 200px;
-    bottom: 290px; /* Adjust the distance from the bottom */
-    background-color: #665c22d3;
-    transform: rotate(94deg);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-}
-.Mensaje{
-    text-align: center;
+            position: absolute;
+            width: 40px;
+            height: 200px;
+            bottom: 290px; /* Ajusta la distancia desde abajo */
+            background-color: #665c22d3;
+            transform: rotate(94deg);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+        .Mensaje{
+            text-align: center;
             font-size: 20px;
             margin-top: 20px;
             color: rgb(182, 216, 228);
-}
-
+        }
+        .flower-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('Floresw.webp'); /* Ruta de la imagen de flores */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+            margin-top: 200px;
+        }
     </style>
 </head>
 <body>
@@ -112,16 +123,15 @@
     <div class="Recuadro2">
         <div class="tapu"></div> <!-- Tape on top of the frame -->
         <img src="CC.jpg " alt="">
-        
     </div>
-    <div class="Symbol"><img src="https://www.wallquotes.com/sites/default/files/styles/uc_canvas/public/love0042_02.png?itok=zO5tkjIa" alt="">
-        </div>
-        <div class="Mensaje">
+    <div class="Symbol">
+        <img src="https://www.wallquotes.com/sites/default/files/styles/uc_canvas/public/love0042_02.png?itok=zO5tkjIa" alt="">
+    </div>
+    <div class="Mensaje">
         Te quiero mucho mi amor
-        </div>
-        
- 
+    </div>
+    <!-- Agrega esto en tu HTML después de cada recuadro -->
+    <div class="flower-overlay"></div>
 </body>
 </html>
-
 
